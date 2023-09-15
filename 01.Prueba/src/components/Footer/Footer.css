@@ -1,0 +1,8 @@
+footer {
+  -webkit-box-shadow: 0px -2px 18px 2px #00000040;
+  box-shadow: 0px -2px 18px 2px #00000040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}

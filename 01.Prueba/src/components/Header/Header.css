@@ -1,0 +1,17 @@
+header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 18px 2px #00000040;
+  box-shadow: 0px 2px 18px 2px #00000040;
+}
+header > img {
+  height: 90%;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+}

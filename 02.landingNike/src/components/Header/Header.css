@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  z-index: 20;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+header > img {
+  height: 40px;
+  padding: 10px;
+  width: auto;
+}
+header ul {
+  display: flex;
+  gap: 10px;
+}
+
+header li {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+header a {
+  color: var(--secondary);
+  transition: color 0.2s ease-in-out;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1260px) {
+  header a {
+    color: var(--primary);
+  }
+}

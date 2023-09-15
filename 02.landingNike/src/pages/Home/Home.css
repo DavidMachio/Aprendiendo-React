@@ -1,0 +1,110 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: auto;
+  gap: 80px;
+  background: -moz-linear-gradient(left, #ce3333 0%, #830000 70%);
+  background: -webkit-linear-gradient(left, #ce3333 0%, #830000 70%);
+  background: linear-gradient(to right, #f24e4e 0%, #830000 70%);
+}
+.description {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+h2 {
+  font-size: 200%;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0), 0px 0px 7px rgb(115, 0, 0);
+}
+h1 {
+  font-size: 700%;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0), 0px 0px 7px rgb(115, 0, 0);
+}
+
+p {
+  font-weight: 400;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0), 0px 0px 7px rgb(115, 0, 0);
+}
+.shopnow {
+  background-color: var(--primary);
+  color: var(--secondary);
+  width: 150px;
+  height: 60px;
+  align-self: center;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  -webkit-box-shadow: 2px 5px 16px 0px #5e0b0b,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 2px 5px 16px 0px #5e0b0b, 5px 5px 15px 5px rgba(71, 6, 6, 0);
+}
+.shopnow:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+}
+.photonike {
+  height: 100vh;
+  width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: rotate 0.3s ease-in-out;
+}
+.photonike img {
+  z-index: 10;
+  position: absolute;
+}
+
+.blockdecoration {
+  position: absolute;
+  height: 100vh;
+  width: 700px;
+  border-radius: 50% 0 0 50%;
+  background-color: var(--primary);
+  transition: all 0.3 ease-in-out;
+}
+
+@media screen and (max-width: 1260px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .description {
+    text-align: center;
+    justify-content: center;
+    margin: 60px 0px;
+  }
+  h1 {
+    font-size: 400%;
+  }
+  h2 {
+    font-size: 300%;
+  }
+  .blockdecoration {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    bottom: 10;
+    border-radius: 50% 50% 0 0;
+    background-color: var(--primary);
+  }
+  .photonike {
+    justify-content: center;
+    align-items: end;
+    height: 60vh;
+    width: 100vw;
+  }
+  .photonike img {
+    width: 450px;
+  }
+}

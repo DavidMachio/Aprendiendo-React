@@ -1,0 +1,22 @@
+:root {
+  --primary: #ebebeb;
+  --secondary: #ae0000;
+  --button-text: #202020;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  color: var(--primary);
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
