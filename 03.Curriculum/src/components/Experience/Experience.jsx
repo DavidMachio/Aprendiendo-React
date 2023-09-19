@@ -7,11 +7,11 @@ const Experience = ({experience}) => {
       <div className="experience card">
         {experience.map((item)=> {
           return(
-            <div key={JSON.stringify(item)} class="experiencetext">
-              <h3 class="exname">{item.name}</h3>
+            <div key={JSON.stringify(item)} className="experiencetext">
+              <h3 className="exname">{item.name}</h3>
               <p>{item.date}</p>
               <p>{item.where}</p>
-              <p>{item.decription}</p>
+              <p>{item.description}</p>
             </div>
           )
         })}

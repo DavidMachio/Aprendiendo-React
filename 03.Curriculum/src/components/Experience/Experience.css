@@ -1,6 +1,18 @@
+@keyframes slidein {
+  from {
+    scale: 90%;
+    opacity: 0;
+  }
+
+  to {
+    scale: 100%;
+    opacity: 100%;
+  }
+}
 .experience {
   margin: 30px 20px;
   text-align: center;
+  animation: slidein 0.5s ease-in-out;
 }
 .experiencetext :nth-child(1) {
   padding: 10px;

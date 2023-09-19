@@ -1,6 +1,18 @@
+@keyframes slidein {
+  from {
+    scale: 90%;
+    opacity: 0;
+  }
+
+  to {
+    scale: 100%;
+    opacity: 100%;
+  }
+}
 .education {
   text-align: center;
   padding: 30px;
+  animation: slidein 0.5s ease-in-out;
 }
 .education > div {
   padding: 10px;

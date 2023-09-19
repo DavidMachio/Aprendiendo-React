@@ -7,8 +7,8 @@ const Skills = ({habilities}) => {
       <div className="experience card">
         {habilities.map((item)=> {
           return(
-            <div key={JSON.stringify(item)} class="experiencetext">
-              <h3 class="exname">{item.name}</h3>
+            <div key={JSON.stringify(item)} className="experiencetext">
+              <h3 className="exname">{item.name}</h3>
               <p>{item}</p>
             </div>
           )

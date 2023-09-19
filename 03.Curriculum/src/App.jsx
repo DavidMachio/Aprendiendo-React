@@ -18,6 +18,11 @@ const App = () => {
   return (
   <>
     <Hero hero={hero}/>
+    <div className="divider">
+      <div className="line"></div>
+      <h4 className='card'>About</h4>
+      <div className='line'></div>
+    </div>
     <About hero={hero}/>
     <div className="buttons">
     <button
@@ -28,14 +33,29 @@ const App = () => {
     onClick={() => setShowEducation(false)}>Experience</button>
     </div>
     <div>
-      {showEducation ? (
+      {showEducation === true ? (
         <Education education={education} />
       ):(
         <Experience experience={experience}/>
       )}
     </div>
+    <div className="divider">
+      <div className="line"></div>
+      <h4 className='card'>Languages</h4>
+      <div className='line'></div>
+    </div>
     <Languages languages={languages}/>
+    <div className="divider">
+      <div className="line"></div>
+      <h4 className='card'>Skills</h4>
+      <div className='line'></div>
+    </div>
     <Skills habilities={habilities}/>
+    <div className="divider">
+      <div className="line"></div>
+      <h4 className='card'>Volunteer</h4>
+      <div className='line'></div>
+    </div>
     <Volunteer volunteer={volunteer}/>
     </>
   );
