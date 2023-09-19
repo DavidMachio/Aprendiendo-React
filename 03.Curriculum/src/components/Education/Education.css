@@ -1,0 +1,11 @@
+.education {
+  text-align: center;
+  padding: 30px;
+}
+.education > div {
+  padding: 10px;
+}
+
+.education > div :nth-child(2) {
+  font-style: italic;
+}

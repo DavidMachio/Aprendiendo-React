@@ -5,7 +5,7 @@ export const CV = {
     city: "Avengers Tower / New York",
     email: "tony@starkindustries.com",
     birthDate: "29/05/1970",
-    image: "https://i.imgur.com/ZQAkED3.png",
+    image: "https://bustedhalo.com/wp-content/uploads/2013/05/ironman-3.jpg",
     gitHub: "https://github.com/tonystark",
     aboutMe: [
       {

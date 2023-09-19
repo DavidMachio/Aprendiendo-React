@@ -1,0 +1,27 @@
+.custom-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: scale 0.4s ease;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: rgba(255, 255, 255, 0.123);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.185);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.custom-btn:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  scale: 103%;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
