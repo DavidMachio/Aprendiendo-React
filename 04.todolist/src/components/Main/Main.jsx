@@ -1,5 +1,5 @@
-import "./Main.css"
 import { useState } from "react";
+import "./Main.css"
 
 
 const Main = () => {
@@ -14,7 +14,8 @@ const Main = () => {
   <main>
     <div className="form">
     <input type="text" placeholder="New task..." 
-    onInput={(ev) => setInputValue(ev.target.value)} />
+    onInput={(ev) => setInputValue(ev.target.value)}
+    value={inputValue} />
     <button onClick={addTodo}>Add</button>
     </div>
     <ul>
