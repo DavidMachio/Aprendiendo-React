@@ -1,0 +1,46 @@
+header {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: auto;
+  padding: 0 1rem;
+}
+header img {
+  height: 1.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.26);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+}

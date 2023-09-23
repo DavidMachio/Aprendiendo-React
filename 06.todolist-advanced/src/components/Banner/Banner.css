@@ -1,0 +1,9 @@
+.imgcover {
+  width: 100%;
+  height: auto;
+}
+.imgcover img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
