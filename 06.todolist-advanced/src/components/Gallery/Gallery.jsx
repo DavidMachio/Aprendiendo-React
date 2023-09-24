@@ -42,7 +42,7 @@ const Gallery = () => {
         </section>
         )}
       </ol>
-      <h3>{shoe.length} Articulos</h3>
+      <h3>Articulos {shoe.length}</h3>
       <h3>Total: {totalShoes} €</h3>
     </section>
     <input type="text" 

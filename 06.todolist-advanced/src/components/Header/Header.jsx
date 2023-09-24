@@ -1,25 +1,33 @@
 
+import { useState } from "react"
 import "./Header.css"
 
-
-
 const Header = () => {
+  const [ menu , setMenu ] = useState (false)
+
+  const toggleMenu = () => {
+    setMenu( !menu )
+  }
+
   return (
-    <header>
-      <img src="./public/icononike.png"/>
-      <button className="abrir-menu">Abrir</button>
-      <nav className= "nav">
-      <button className="cerrar-menu" id="cerrar">Cerrar</button>
-        <ul className="nav-list">
-          <li><a href="#null">Hombre</a></li>
-          <li><a href="#null">Mujer</a></li>
-          <li><a href="#null">Ofertas</a></li>
-          <button>Perfil</button>
-          <button>Cesta</button>
+    <header className="header">
+      <img src="./icononike.png" className="header-logo"/>
+
+      <button onClick={ toggleMenu }
+      className="header-button">
+        <img src="./menu.png"/>
+      </button>
+
+      <nav className={`header-nav ${ menu ? 'Active' : '' }` }>
+        <ul className="header-ul">
+          <li className="header-li"><a href="#null" className="header-a">Hombre</a></li>
+          <li className="header-li"><a href="#null" className="header-a">Mujer</a></li>
+          <li className="header-li"><a href="#null" className="header-a">Ofertas</a></li>
+          <li className="header-li"><a href="#null" className="header-a"><img src="./perfil.png"/></a></li>
+          <li className="header-li"><a href="#null" className="header-a"><img src="./cesta.png"/></a></li>
         </ul>
-        </nav>
+      </nav>
     </header>
   )
 }
-
 export default Header;

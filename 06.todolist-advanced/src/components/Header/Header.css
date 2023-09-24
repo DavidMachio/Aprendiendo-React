@@ -1,46 +1,63 @@
-header {
-  font-size: 1.2rem;
+.header {
+  padding: 1rem 2rem;
+  height: auto;
+  background-color: rgb(255, 255, 255);
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  height: 3rem;
-  width: auto;
-  padding: 0 1rem;
 }
-header img {
+
+.header-logo {
   height: 1.5rem;
 }
-
-ul {
-  display: flex;
-  gap: 1rem;
-}
-.abrir-menu,
-.cerrar-menu {
+.header-button {
+  background-color: transparent;
+  border: none;
   display: none;
+  cursor: pointer;
+}
+.header-button img {
+  height: 20px;
+}
+.header-a img {
+  height: 1rem;
+  display: flex;
+}
+.header-a:hover {
+  text-decoration: underline;
+}
+.header-ul {
+  gap: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: end;
 }
 
-@media screen and (max-width: 500px) {
-  .abrir-menu,
-  .cerrar-menu {
-    display: block;
+@media screen and (max-width: 480px) {
+  .header-button {
+    display: flex;
   }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--secondary);
-    padding: 1rem 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.26);
-  }
-
-  .nav-list {
-    flex-direction: column;
+  .header-nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
     align-items: end;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .header-nav.Active {
+    height: 30vh;
+    opacity: 1;
+  }
+  .header-ul {
+    flex-direction: column;
+  }
+  .header-li {
+    margin: 0.5rem;
   }
 }
