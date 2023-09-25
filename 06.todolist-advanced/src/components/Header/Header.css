@@ -1,6 +1,8 @@
 .header {
+  position: fixed;
   padding: 1rem 2rem;
-  height: auto;
+  height: 3.5rem;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-flow: row wrap;
@@ -11,18 +13,23 @@
 .header-logo {
   height: 1.5rem;
 }
-.header-button {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-a img {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.cesta {
   background-color: transparent;
   border: none;
-  display: none;
   cursor: pointer;
 }
-.header-button img {
-  height: 20px;
-}
-.header-a img {
-  height: 1rem;
-  display: flex;
+.cesta img {
+  height: 2rem;
 }
 .header-a:hover {
   text-decoration: underline;
@@ -32,10 +39,19 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  align-items: end;
+  align-items: center;
+}
+.header-button {
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+.header-button img {
+  height: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .header-button {
     display: flex;
   }
@@ -51,7 +67,7 @@
     transition: all 0.5s ease;
   }
   .header-nav.Active {
-    height: 30vh;
+    height: 35vh;
     opacity: 1;
   }
   .header-ul {

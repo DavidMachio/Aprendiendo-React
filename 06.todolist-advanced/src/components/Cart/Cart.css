@@ -1,0 +1,44 @@
+.sectioncard {
+  display: flex;
+  flex-direction: column;
+}
+.carrito-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: end;
+  padding: 10px 0;
+}
+.cart {
+  position: fixed;
+  top: 3.5rem;
+  right: 0;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.cart.Active {
+  background-color: grey;
+}
+.cart h3 {
+  text-align: end;
+}
+ol img {
+  margin-right: 60px;
+  height: 50px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.289);
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: grey;
+  align-self: center;
+  margin: 2px;
+}

@@ -24,9 +24,12 @@ const Header = () => {
           <li className="header-li"><a href="#null" className="header-a">Mujer</a></li>
           <li className="header-li"><a href="#null" className="header-a">Ofertas</a></li>
           <li className="header-li"><a href="#null" className="header-a"><img src="./perfil.png"/></a></li>
-          <li className="header-li"><a href="#null" className="header-a"><img src="./cesta.png"/></a></li>
+          <li className="header-li"><a href="#null" className="header-a cesta"><img src="./cesta.png"/></a></li>
         </ul>
       </nav>
+
+
+      
     </header>
   )
 }

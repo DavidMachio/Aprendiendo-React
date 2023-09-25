@@ -16,3 +16,6 @@ a {
   text-decoration: none;
   color: var(--primary);
 }
+.imgcover {
+  padding-top: 8vh;
+}
