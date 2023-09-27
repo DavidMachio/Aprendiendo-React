@@ -1,7 +1,8 @@
 .header {
   position: fixed;
+  z-index: 200;
   padding: 1rem 2rem;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -56,6 +57,7 @@
     display: flex;
   }
   .header-nav {
+    display: none;
     background-color: white;
     width: 100%;
     display: flex;

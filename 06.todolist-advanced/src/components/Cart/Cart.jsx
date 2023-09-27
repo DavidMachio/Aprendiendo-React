@@ -1,9 +1,9 @@
 import "./Cart.css"
 
-const Cart = ({shoe, totalShoes, setShoe, setTotalShoes}) => {
+const Cart = ({shoe, totalShoes, setShoe, setTotalShoes, change2}) => {
 
-  const deleteShoe = (id) => {
-    const newNumberShoes = shoe.filter((item) => item.id !== id )
+  const deleteShoe = (_id) => {
+    const newNumberShoes = shoe.filter((item) => item._id !== _id )
     setShoe(newNumberShoes);
     const newPrice = newNumberShoes.reduce((total, item)=> total + item.price, 0);
     setTotalShoes(newPrice)
@@ -14,18 +14,20 @@ const Cart = ({shoe, totalShoes, setShoe, setTotalShoes}) => {
 
 
   return (
-    <section className="cart Active">
+    <section className={change2 ? " cart Inactive" :"cart" }>
       <h3>Mi carrito</h3>
-      <ol>
+      {shoe.length === 0 ? <p className="empty">Tu carrito está vacío</p> : (
+        <>
+        <ol>
         {shoe.map((item) => 
-        <section className="sectioncard" key={item.id}>
+        <section className="sectioncard" key={item._id}>
         <article className="carrito-card">
           <img src={item.img} alt={item.model}/>
         <div>
           <li>{item.model}</li>
           <li>{item.price} €</li>
         </div>
-        <button className="delete" onClick={() => deleteShoe(item.id)}>x</button>
+        <button className="delete" onClick={() => deleteShoe(item._id)}>x</button>
         </article>
         <div className="divider"></div>
         
@@ -36,6 +38,8 @@ const Cart = ({shoe, totalShoes, setShoe, setTotalShoes}) => {
       <h3>Articulos {shoe.length}</h3>
       <h3>Total: {totalShoes} €</h3>
       </ol>
+      </>
+      )}
       <button className="comprar">Realizar pedido</button>
     </section>
   )

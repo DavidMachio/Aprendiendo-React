@@ -1,5 +1,4 @@
 import "./Articulos.css"
-
 const Articulos = ({items, addItem}) => {
   return (
     <ul>

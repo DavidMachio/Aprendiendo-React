@@ -12,18 +12,27 @@
 .cart {
   position: fixed;
   z-index: 100;
-  top: 3.5rem;
+  top: 4.2rem;
   right: 0;
   max-width: 500px;
+  min-height: 100px;
   background-color: white;
   border-radius: 0 0 5px 5px;
   padding: 10px 35px;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  opacity: 1;
+  transition: all 0.2s ease;
 }
-.cart.Active {
+.cart.Inactive {
   background-color: rgb(223, 223, 223);
+  top: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.empty {
+  margin-top: 10px;
 }
 .cart h3 {
   text-align: end;
@@ -60,4 +69,11 @@ ol img {
   color: white;
   background-color: black;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    top: 21rem;
+    right: 2.5rem;
+  }
 }

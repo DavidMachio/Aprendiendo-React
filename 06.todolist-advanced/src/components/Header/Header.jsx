@@ -2,7 +2,7 @@
 import { useState } from "react"
 import "./Header.css"
 
-const Header = () => {
+const Header = ({hidden}) => {
   const [ menu , setMenu ] = useState (false)
 
   const toggleMenu = () => {
@@ -24,7 +24,7 @@ const Header = () => {
           <li className="header-li"><a href="#null" className="header-a">Mujer</a></li>
           <li className="header-li"><a href="#null" className="header-a">Ofertas</a></li>
           <li className="header-li"><a href="#null" className="header-a"><img src="./perfil.png"/></a></li>
-          <li className="header-li"><a href="#null" className="header-a cesta"><img src="./cesta.png"/></a></li>
+          <li className="header-li"><button className="header-a cesta" onClick={hidden}><img src="./cesta.png"/></button></li>
         </ul>
       </nav>
 

@@ -1,10 +1,8 @@
 .imgcover {
   width: 100%;
   height: auto;
-  border: 2px solid blue;
 }
 .imgcover img {
-  border: 2px solid red;
   width: 100vw;
   height: auto;
   object-fit: cover;
