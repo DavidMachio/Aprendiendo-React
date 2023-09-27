@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import Gallery from './components/Gallery/Gallery'
 import Header from './components/Header/Header'
 
-
+/*funcion */
 
 
 const App = () => {

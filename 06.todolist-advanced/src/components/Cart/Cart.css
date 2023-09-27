@@ -11,21 +11,23 @@
 }
 .cart {
   position: fixed;
+  z-index: 100;
   top: 3.5rem;
   right: 0;
-  max-width: 400px;
+  max-width: 500px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   padding: 10px 35px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .cart.Active {
-  background-color: grey;
+  background-color: rgb(223, 223, 223);
 }
 .cart h3 {
   text-align: end;
+  margin-right: 30px;
 }
 ol img {
   margin-right: 60px;
@@ -35,10 +37,27 @@ ol img {
   border-radius: 10px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.289);
 }
+.delete {
+  width: 20px;
+  height: auto;
+  margin-left: 20px;
+}
 .divider {
   height: 1px;
   width: 100%;
   background-color: grey;
   align-self: center;
   margin: 2px;
+  margin-bottom: 14px;
+}
+.totales {
+  display: flex;
+  justify-content: space-between;
+}
+.comprar {
+  width: auto;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  margin-top: 20px;
 }

@@ -10,6 +10,7 @@ const Gallery = () => {
   const [totalShoes, setTotalShoes] = useState(0);
   const [items, setItems] = useState(nikeshoes);
 
+
   
 
   const addItem = (item) =>{
@@ -25,8 +26,8 @@ const Gallery = () => {
   };
   return (
   <main>
-    <Cart shoe={shoe} totalShoes={totalShoes}/>
-    <Search filtrarShoes={filtrarShoes}/>
+    <Cart shoe={shoe} totalShoes={totalShoes} setShoe={setShoe} setTotalShoes={setTotalShoes}/>
+    <Search action={filtrarShoes}/>
     <Articulos items={items} addItem={addItem}/>
   </main>
 )}
