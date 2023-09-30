@@ -1,0 +1,26 @@
+.bikes ul {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+.bikes li {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.bikes img {
+  border-radius: 30px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+.bikes img:hover {
+  scale: 105%;
+  filter: grayscale(0);
+}
+.bikes h2 {
+  padding: 10px;
+}

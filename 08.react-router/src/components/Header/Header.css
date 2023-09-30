@@ -1,0 +1,21 @@
+header {
+  color: var(--primary);
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  height: 3rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+header h1 {
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Pacifico", cursive;
+}
